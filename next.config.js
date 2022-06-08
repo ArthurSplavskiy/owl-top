@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+module.exports = {
+	webpack: (config, options) => {
+		config.module.rules.push({
+			test: /\.svg$/,
+			issuer: /\.(js|ts)x?$/,
+			use: ['@svgr/webpack'],
+		});
 
-module.exports = nextConfig
+		return config;
+	},
+	// assetPrefix: './',
+	// trailingSlash: true,
+};

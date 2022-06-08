@@ -1,0 +1,35 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"semi": "off",
+		"@typescript-eslint/semi": ["warn"],
+		"@typescript-eslint/no-empty-interface": [
+			"error",
+			{
+				"allowSingleExtends": true
+			}
+		],
+		// disable the rule for all files
+		"@typescript-eslint/explicit-function-return-type": "off"
+	},
+	"overrides": [
+		{
+			// enable the rule specifically for TypeScript files
+			"files": ["*.ts", "*.mts", "*.cts", "*.tsx"],
+			"rules": {
+				"@typescript-eslint/explicit-function-return-type": ["warn"],
+				"@typescript-eslint/no-unused-vars": ["warn"],
+				//"@typescript-eslint/no-extra-parens": ["error"],
+				"no-extra-parens": "off"
+			}
+		}
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended"
+	]
+}
