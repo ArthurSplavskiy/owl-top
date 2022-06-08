@@ -2,13 +2,13 @@
 	--black: #3B434E;
 	--grey: #A4A4A4;
 	--grey-light: #EBEBEB;
-	--grey-dark: #3b434e;
+	--grey-dark: #3B434E;
 	--white: #FFF;
-	--primary:#6344df;
+	--primary: #6344DF;
 	--primary-hover: #6344DF;
 	--red: #FC836D;
-	--red-light: #f49787;
-	--green: #1d8158;
+	--red-light: #F49787;
+	--green: #1D8158;
 	--green-light: #C8F8E4;
 }
 
@@ -19,7 +19,7 @@ body {
 
 	color: var(--black);
 	background: #F5F6F8;
-	
+
 	font-family: "Noto Sans", sans-serif;
 }
 
@@ -37,11 +37,13 @@ ul {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
 	font-family: "Noto Sans", sans-serif;
 }
 
 .visualyHidden {
+	overflow: hidden;
+
 	width: 0;
 	height: 0;
-	overflow: hidden;
 }

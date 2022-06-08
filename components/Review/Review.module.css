@@ -25,9 +25,11 @@
 	.review {
 		grid-template-columns: [start] 30px [titlestart] auto [dateend] 1fr [end];
 	}
+
 	.title {
 		grid-column: titlestart / end;
 	}
+
 	.date {
 		grid-column: start / dateend;
 	}

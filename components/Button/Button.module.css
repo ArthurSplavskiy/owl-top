@@ -45,7 +45,7 @@
 	transform: rotate(90deg);
 }
 
-.ghost:hover .arrow svg,
-.primary .arrow svg {
+.primary .arrow svg,
+.ghost:hover .arrow svg {
 	fill: var(--white);
 }
